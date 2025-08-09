@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdulkhaliq Bhatti - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/feather-icons"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+    .skill-card:hover i {
+      transform: translateY(-5px);
+    }
+    .social-icon:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-lg fixed w-full z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-blue-600">Abdulkhaliq Bhatti</h1>
+      <ul class="hidden md:flex space-x-8 font-medium">
+        <li><a href="#about" class="hover:text-blue-600 transition duration-300">About</a></li>
+        <li><a href="#skills" class="hover:text-blue-600 transition duration-300">Skills</a></li>
+        <li><a href="#experience" class="hover:text-blue-600 transition duration-300">Experience</a></li>
+        <li><a href="#contact" class="hover:text-blue-600 transition duration-300">Contact</a></li>
+      </ul>
+      <button class="md:hidden focus:outline-none">
+        <i data-feather="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center px-4 pt-20" data-aos="fade-up">
+    <div class="relative">
+      <img src="profile-pic.png" alt="Profile Picture" class="hidden md:block w-48 h-48 rounded-full border-4 border-white shadow-2xl mb-8 object-cover hover:shadow-lg transition duration-500">
+      <div class="absolute -bottom-2 -right-2 bg-yellow-400 text-gray-900 px-3 py-1 rounded-full text-xs font-bold animate-pulse">Available for work</div>
+    </div>
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">
+      Abdulkhaliq <span class="text-yellow-300">Bhatti</span>
+    </h1>
+    <p class="text-lg md:text-2xl mb-8 max-w-2xl leading-relaxed">Computer Science Undergraduate at QUEST Nawabshah | Database Specialist | Backend Developer | WordPress Expert</p>
+    <div class="flex gap-4">
+      <a href="#about" class="px-8 py-3 bg-white text-blue-600 rounded-full font-semibold shadow-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105">
+        Explore My Work
+      </a>
+      <a href="#contact" class="px-8 py-3 border-2 border-white text-white rounded-full font-semibold hover:bg-white hover:text-blue-600 transition duration-300 transform hover:scale-105">
+        Hire Me
+      </a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="max-w-5xl mx-auto px-6 py-20" data-aos="fade-up">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold mb-4 relative inline-block">
+        About Me
+        <span class="absolute bottom-0 left-0 w-full h-1 bg-blue-600"></span>
+      </h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">Get to know me better</p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h3 class="text-2xl font-semibold mb-4">Who am I?</h3>
+        <p class="text-lg leading-relaxed mb-6">
+          I'm a passionate 4th year Computer Science student at QUEST Nawabshah with expertise in database administration, backend development, and WordPress solutions. My journey in technology has equipped me with diverse skills to create efficient and scalable digital solutions.
+        </p>
+        <p class="text-lg leading-relaxed">
+          When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or helping businesses establish their online presence through custom web solutions.
+        </p>
+      </div>
+      <div class="bg-gradient-to-br from-blue-500 to-purple-600 p-1 rounded-xl shadow-xl">
+        <div class="bg-white p-6 rounded-lg h-full">
+          <h3 class="text-xl font-bold mb-4 text-center">Personal Information</h3>
+          <ul class="space-y-3">
+            <li class="flex items-center">
+              <i data-feather="user" class="w-5 h-5 mr-3 text-blue-600"></i>
+              <span><strong>Name:</strong> Abdulkhaliq Bhatti</span>
+            </li>
+            <li class="flex items-center">
+              <i data-feather="map-pin" class="w-5 h-5 mr-3 text-blue-600"></i>
+              <span><strong>Location:</strong> Nawabshah, Pakistan</span>
+            </li>
+            <li class="flex items-center">
+              <i data-feather="book" class="w-5 h-5 mr-3 text-blue-600"></i>
+              <span><strong>Education:</strong> BSCS (4th Year) at QUEST</span>
+            </li>
+            <li class="flex items-start">
+              <i data-feather="briefcase" class="w-5 h-5 mr-3 text-blue-600 mt-1"></i>
+              <span><strong>Experience:</strong> 6+ Months</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="bg-gray-100 py-20" data-aos="fade-up">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold mb-4 relative inline-block">
+          My Skills
+          <span class="absolute bottom-0 left-0 w-full h-1 bg-blue-600"></span>
+        </h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Technologies I work with</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Skill Card 1 -->
+        <div class="skill-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-500 transform hover:-translate-y-2">
+          <div class="p-6 flex flex-col items-center text-center">
+            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+              <i data-feather="database" class="text-blue-600 w-8 h-8 transition duration-300"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Database Administration</h3>
+            <p class="text-gray-600">Expert in database design, optimization, and management with MySQL, PostgreSQL</p>
+            <div class="mt-4 w-full bg-gray-200 rounded-full h-2">
+              <div class="bg-blue-600 h-2 rounded-full" style="width: 90%"></div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Skill Card 2 -->
+        <div class="skill-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-500 transform hover:-translate-y-2">
+          <div class="p-6 flex flex-col items-center text-center">
+            <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+              <i data-feather="code" class="text-purple-600 w-8 h-8 transition duration-300"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Backend Development</h3>
+            <p class="text-gray-600">Building robust backend systems with PHP and related frameworks</p>
+            <div class="mt-4 w-full bg-gray-200 rounded-full h-2">
+              <div class="bg-purple-600 h-2 rounded-full" style="width: 85%"></div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Skill Card 3 -->
+        <div class="skill-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-500 transform hover:-translate-y-2">
+          <div class="p-6 flex flex-col items-center text-center">
+            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
+              <i data-feather="globe" class="text-green-600 w-8 h-8 transition duration-300"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">WordPress Development</h3>
+            <p class="text-gray-600">Creating custom WordPress themes, plugins and websites</p>
+            <div class="mt-4 w-full bg-gray-200 rounded-full h-2">
+              <div class="bg-green-600 h-2 rounded-full" style="width: 88%"></div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Skill Card 4 -->
+        <div class="skill-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-500 transform hover:-translate-y-2">
+          <div class="p-6 flex flex-col items-center text-center">
+            <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
+              <i data-feather="terminal" class="text-yellow-600 w-8 h-8 transition duration-300"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Prompt Engineering</h3>
+            <p class="text-gray-600">Designing effective AI prompts and conversational interfaces</p>
+            <div class="mt-4 w-full bg-gray-200 rounded-full h-2">
+              <div class="bg-yellow-500 h-2 rounded-full" style="width: 80%"></div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Skill Card 5 -->
+        <div class="skill-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-500 transform hover:-translate-y-2">
+          <div class="p-6 flex flex-col items-center text-center">
+            <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4">
+              <i data-feather="users" class="text-red-600 w-8 h-8 transition duration-300"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Lead Generation</h3>
+            <p class="text-gray-600">Identifying and cultivating potential customers for businesses</p>
+            <div class="mt-4 w-full bg-gray-200 rounded-full h-2">
+              <div class="bg-red-500 h-2 rounded-full" style="width: 75%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="max-w-5xl mx-auto px-6 py-20" data-aos="fade-up">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold mb-4 relative inline-block">
+        My Experience
+        <span class="absolute bottom-0 left-0 w-full h-1 bg-blue-600"></span>
+      </h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">Where I've worked</p>
+    </div>
+    
+    <div class="space-y-8">
+      <!-- Experience 1 -->
+      <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-500 group">
+        <div class="flex flex-col md:flex-row gap-6">
+          <div class="md:w-1/4">
+            <div class="bg-blue-100 text-blue-800 p-4 rounded-lg h-full flex flex-col items-center justify-center text-center">
+              <i data-feather="briefcase" class="w-10 h-10 mb-2"></i>
+              <h3 class="font-bold">Jun 2023 - Present</h3>
+              <p class="text-sm">6+ Months</p>
+            </div>
+          </div>
+          <div class="md:w-3/4">
+            <h3 class="text-2xl font-bold mb-2 group-hover:text-blue-600 transition">Backend Developer</h3>
+            <h4 class="text-xl text-gray-700 mb-4">Sindh Tech Solution Software House</h4>
+            <ul class="space-y-2 text-gray-600">
+              <li class="flex items-start">
+                <i data-feather="check-circle" class="w-4 h-4 mr-2 text-green-500 mt-1"></i>
+                <span>Developed and maintained PHP-based backend systems for various client projects</span>
+              </li>
+              <li class="flex items-start">
+                <i data-feather="check-circle" class="w-4 h-4 mr-2 text-green-500 mt-1"></i>
+                <span>Optimized database performance and implemented efficient queries</span>
+              </li>
+              <li class="flex items-start">
+                <i data-feather="check-circle" class="w-4 h-4 mr-2 text-green-500 mt-1"></i>
+                <span>Created custom WordPress themes and plugins for client websites</span>
+              </li>
+              <li class="flex items-start">
+                <i data-feather="check-circle" class="w-4 h-4 mr-2 text-green-500 mt-1"></i>
+                <span>Collaborated with frontend developers to integrate user-facing elements</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Experience 2 -->
+      <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-500 group">
+        <div class="flex flex-col md:flex-row gap-6">
+          <div class="md:w-1/4">
+            <div class="bg-purple-100 text-purple-800 p-4 rounded-lg h-full flex flex-col items-center justify-center text-center">
+              <i data-feather="code" class="w-10 h-10 mb-2"></i>
+              <h3 class="font-bold">2022 - Present</h3>
+              <p class="text-sm">Freelance</p>
+            </div>
+          </div>
+          <div class="md:w-3/4">
+            <h3 class="text-2xl font-bold mb-2 group-hover:text-purple-600 transition">Freelance Developer</h3>
+            <h4 class="text-xl text-gray-700 mb-4">Self-Employed</h4>
+            <ul class="space-y-2 text-gray-600">
+              <li class="flex items-start">
+                <i data-feather="check-circle" class="w-4 h-4 mr-2 text-green-500 mt-1"></i>
+                <span>Completed numerous WordPress projects for clients worldwide</span>
+              </li>
+              <li class="flex items-start">
+                <i data-feather="check-circle" class="w-4 h-4 mr-2 text-green-500 mt-1"></i>
+                <span>Provided database optimization services for small businesses</span>
+              </li>
+              <li class="flex items-start">
+                <i data-feather="check-circle" class="w-4 h-4 mr-2 text-green-500 mt-1"></i>
+                <span>Developed custom PHP solutions for specific client needs</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20" data-aos="fade-up">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold mb-4 relative inline-block">
+          Get In Touch
+          <span class="absolute bottom-0 left-0 w-full h-1 bg-yellow-400"></span>
+        </h2>
+        <p class="text-blue-100 max-w-2xl mx-auto">Have a project in mind or want to discuss opportunities?</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Contact Form -->
+        <form action="#" method="POST" class="bg-white text-gray-800 rounded-xl shadow-2xl p-8 space-y-6">
+          <h3 class="text-2xl font-bold text-center text-gray-800 mb-6">Send Me a Message</h3>
+          <div>
+            <label class="block font-semibold mb-2">Name</label>
+            <input type="text" name="name" required 
+                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition">
+          </div>
+          <div>
+            <label class="block font-semibold mb-2">Email</label>
+            <input type="email" name="email" required 
+                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition">
+          </div>
+          <div>
+            <label class="block font-semibold mb-2">Subject</label>
+            <input type="text" name="subject" required 
+                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition">
+          </div>
+          <div>
+            <label class="block font-semibold mb-2">Message</label>
+            <textarea name="message" rows="5" required 
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"></textarea>
+          </div>
+          <button type="submit" 
+                  class="w-full px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold shadow-lg hover:opacity-90 transition duration-300 transform hover:scale-[1.01]">
+            Send Message
+          </button>
+        </form>
+
+        <!-- Contact Info -->
+        <div class="space-y-8">
+          <div class="bg-white bg-opacity-10 backdrop-blur-sm p-8 rounded-xl shadow-lg border border-white border-opacity-20">
+            <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+            <ul class="space-y-4">
+              <li class="flex items-start">
+                <div class="bg-white bg-opacity-20 p-3 rounded-full mr-4">
+                  <i data-feather="mail" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Email</h4>
+                  <a href="mailto:abdulkhaliqb338@gmail.com" class="text-blue-100 hover:underline">abdulkhaliqb338@gmail.com</a>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <div class="bg-white bg-opacity-20 p-3 rounded-full mr-4">
+                  <i data-feather="phone" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Phone</h4>
+                  <a href="tel:03043986756" class="text-blue-100 hover:underline">0304 3986756</a>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <div class="bg-white bg-opacity-20 p-3 rounded-full mr-4">
+                  <i data-feather="map-pin" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Location</h4>
+                  <p class="text-blue-100">Nawabshah, Sindh, Pakistan</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Download CV -->
+          <div class="text-center">
+            <a href="cv.pdf" download 
+               class="inline-block px-8 py-3 bg-white text-blue-600 rounded-full font-semibold shadow-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105">
+              <div class="flex items-center justify-center gap-2">
+                <i data-feather="download"></i>
+                <span>Download CV</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Socials Section -->
+  <section class="bg-gray-100 py-16" data-aos="fade-up">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold mb-4 relative inline-block">
+          Connect With Me
+          <span class="absolute bottom-0 left-0 w-full h-1 bg-blue-600"></span>
+        </h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Let's stay in touch</p>
+      </div>
+      
+      <div class="flex justify-center flex-wrap gap-6">
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/abdul-khaliq-bhatti-816880124/" target="_blank" 
+           class="social-icon bg-blue-600 text-white p-5 rounded-full shadow-lg hover:bg-blue-700 transition duration-300 transform hover:scale-110">
+          <i data-feather="linkedin" class="w-6 h-6"></i>
+        </a>
+        
+        <!-- GitHub -->
+        <a href="https://github.com/abkb05/" target="_blank" 
+           class="social-icon bg-gray-800 text-white p-5 rounded-full shadow-lg hover:bg-black transition duration-300 transform hover:scale-110">
+          <i data-feather="github" class="w-6 h-6"></i>
+        </a>
+        
+        <!-- Twitter -->
+        <a href="https://twitter.com/yourhandle" target="_blank" 
+           class="social-icon bg-blue-400 text-white p-5 rounded-full shadow-lg hover:bg-blue-500 transition duration-300 transform hover:scale-110">
+          <i data-feather="twitter" class="w-6 h-6"></i>
+        </a>
+        
+        <!-- Facebook -->
+        <a href="https://facebook.com/yourprofile" target="_blank" 
+           class="social-icon bg-blue-700 text-white p-5 rounded-full shadow-lg hover:bg-blue-800 transition duration-300 transform hover:scale-110">
+          <i data-feather="facebook" class="w-6 h-6"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-6 md:mb-0">
+          <h2 class="text-2xl font-bold text-blue-400 mb-2">Abdulkhaliq Bhatti</h2>
+          <p class="text-gray-400">Computer Science Student & Developer</p>
+        </div>
+        <div class="flex flex-col items-center md:items-end">
+          <p class="mb-4 text-gray-400">© 2023 All Rights Reserved</p>
+          <a href="#top" class="flex items-center text-blue-400 hover:text-blue-300 transition">
+            <i data-feather="arrow-up" class="mr-2"></i>
+            Back to Top
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+      easing: 'ease-in-out'
+    });
+    feather.replace();
+    
+    // Mobile menu toggle (you can implement this functionality)
+    document.querySelector('nav button').addEventListener('click', function() {
+      // Toggle mobile menu visibility
+    });
+  </script>
+</body>
+</html>
